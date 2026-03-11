@@ -17,12 +17,13 @@ const CONFIG = Object.freeze({
 
   // OpenAI endpoints
   CHAT_API_URL: "https://api.openai.com/v1/chat/completions",
-  IMAGE_API_URL: "https://api.openai.com/v1/images/generations",
+  IMAGE_API_URL: "https://api.openai.com/v1/images/generations",  // dall-e-2, dall-e-3
+  RESPONSES_API_URL: "https://api.openai.com/v1/responses",        // gpt-image-* models
 
   // Model choices — easy to upgrade in one place
   CHAT_MODEL: "gpt-5-nano",
-  IMAGE_MODEL: "dall-e-2",
-  IMAGE_SIZE: "256x256",
+  IMAGE_MODEL: "gpt-image-1-mini",
+  IMAGE_SIZE: "1024x1024",  // used only for dall-e models
 });
 
 export default CONFIG;

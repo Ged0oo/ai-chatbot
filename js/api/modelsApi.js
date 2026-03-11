@@ -28,8 +28,8 @@ const NON_CHAT_PATTERNS = [
 ];
 
 // Patterns that identify image generation models supported by /v1/images/generations
-// Note: gpt-image-* uses /v1/responses (a different endpoint), so excluded here
-const IMAGE_PATTERNS = ["dall-e"];
+// gpt-image-* uses /v1/responses but we still want it in the image model dropdown
+const IMAGE_PATTERNS = ["dall-e", "gpt-image"];
 
 /**
  * Returns a sorted list of model IDs that support /v1/chat/completions.
